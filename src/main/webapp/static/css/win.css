@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.win-img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-image: url("/images/win.jpg");
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.text-win {
+    padding-top: 210px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 28px;
+    color: #c5b273;
+    display: flex;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+.button-container{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-block{
+    font-size: 20px;
+    background-color: #504848;
+    color: #dacdbd;
+    border-radius: 15px;
+    height: 35px;
+    width: 200px;
+}

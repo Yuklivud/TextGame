@@ -14,5 +14,6 @@ public class StartService {
         session.setAttribute("currentQuestionId", 0);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/view/start.jsp");
         dispatcher.forward(req, resp);
+
     }
 }

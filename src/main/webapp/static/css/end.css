@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url("../font/King Arthur Legend.ttf") format("truetype");
+}
+.end-page-title {
+    padding-top: 50px;
+    padding-left: 80px;
+    margin: 0;
+    font-size: 60px;
+    color: #600202;
+    display: flex;
+    font-family: MyCustomFont, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.text-about {
+    font-size: 28px;
+    color: #600202;
+    display: flex;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.button-container{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-block{
+    font-size: 20px;
+    background-color: #504848;
+    color: #dacdbd;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+}
+.death-page-img {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/death.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 90px;
+}

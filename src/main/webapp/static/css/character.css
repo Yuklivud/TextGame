@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url("../font/King Arthur Legend.ttf") format("truetype");
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.second-page-center{
+    text-align: center;
+    padding-top: 90px;
+}
+
+.borders{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+.second-page-img {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/First_room_tutorial.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    width: auto;
+    height: 600px;
+}
+.second-page-title {
+    padding-left: 80px;
+    font-size: 75px;
+    color: #dacdbd;
+    display: flex;
+    font-family: MyCustomFont, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-about {
+    font-size: 28px;
+    color: #dacdbd;
+    display: flex;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    border: 2px #889191 solid;
+    padding: 5px;
+}
+.block {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-block{
+    font-size: 20px;
+    background-color: #504848;
+    color: #dacdbd;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+}

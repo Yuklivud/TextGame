@@ -12,7 +12,12 @@ import java.io.IOException;
 import java.util.List;
 
 public class GameService {
-    private QuestionLoader loader = new QuestionLoader();
+    private QuestionLoader loader;
+
+    public GameService(QuestionLoader loader) {
+        this.loader = loader;
+    }
+
     private static final int TOTAL_NUM_OF_QUESTIONS = 10;
 
     public void getLogic(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

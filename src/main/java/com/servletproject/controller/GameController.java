@@ -1,6 +1,7 @@
 package com.servletproject.controller;
 
 import com.servletproject.service.GameService;
+import com.servletproject.utils.QuestionLoader;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,12 +11,8 @@ import java.io.IOException;
 
 @WebServlet(name = "gameServlet", value = "/game")
 public class GameController extends HttpServlet {
-
-    private static GameService gameService;
-
-    public GameController(GameService gameService) {
-        this.gameService = gameService;
-    }
+    private static QuestionLoader questionLoader = new QuestionLoader();
+    private static GameService gameService = new GameService(questionLoader);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

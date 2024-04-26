@@ -10,7 +10,11 @@ import java.io.IOException;
 
 @WebServlet(name = "gameServlet", value = "/game")
 public class GameController extends HttpServlet {
-    private static GameService gameService = new GameService();
+    private static GameService gameService;
+
+    public GameController(GameService gameService) {
+        this.gameService = gameService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
